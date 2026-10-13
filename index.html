@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Fixed Header trên cùng -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">f</div>
+            <input type="text" class="search-box" placeholder="Tìm kiếm trên Facebook">
+        </div>
+        <div class="header-center">
+            <!-- Khu vực các icon điều hướng (Trang chủ, Video, Marketplace...) -->
+            <div class="nav-icon active">Trang chủ</div>
+            <div class="nav-icon">Video</div>
+            <div class="nav-icon">Nhóm</div>
+        </div>
+        <div class="header-right">
+            <div class="profile-icon">Menu</div>
+            <div class="profile-icon">Mess</div>
+            <div class="profile-icon">Noti</div>
+        </div>
+    </header>
+
+    <!-- Khối chứa toàn bộ nội dung bên dưới Header -->
+    <div class="container">
+        
+        <!-- Sidebar Cột Trái -->
+        <aside class="sidebar left-sidebar">
+            <ul class="menu-list">
+                <li>👤 Tên Người Dùng</li>
+                <li>👥 Bạn bè</li>
+                <li>🕒 Kỷ niệm</li>
+                <li>🔖 Đã lưu</li>
+                <li>🚩 Trang</li>
+                <li>📅 Sự kiện</li>
+            </ul>
+        </aside>
+
+        <!-- Phần Nội dung chính (Bảng tin/News Feed) -->
+        <main class="main-content">
+            <!-- Khối đăng bài -->
+            <div class="card create-post">
+                <div class="post-input-area">
+                    <div class="avatar"></div>
+                    <input type="text" placeholder="Bạn đang nghĩ gì thế?">
+                </div>
+            </div>
+
+            <!-- Các bài viết -->
+            <div class="card post">
+                <div class="post-header">
+                    <div class="avatar"></div>
+                    <div class="post-info">
+                        <h4>Người dùng A</h4>
+                        <span>2 giờ trước</span>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>Đây là một bài viết mẫu trên bảng tin. Nội dung có thể là văn bản, hình ảnh hoặc video.</p>
+                </div>
+            </div>
+
+            <div class="card post">
+                <div class="post-header">
+                    <div class="avatar"></div>
+                    <div class="post-info">
+                        <h4>Người dùng B</h4>
+                        <span>5 giờ trước</span>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>Thiết kế layout Facebook sử dụng HTML5 và CSS3 Flexbox. Rất đơn giản và trực quan!</p>
+                </div>
+            </div>
+            
+            <div class="card post">
+                <div class="post-header">
+                    <div class="avatar"></div>
+                    <div class="post-info">
+                        <h4>Người dùng C</h4>
+                        <span>Hôm qua</span>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>Thêm nhiều bài viết để kiểm tra tính năng cuộn trang (scroll) trong khi header và sidebar vẫn giữ nguyên vị trí.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar Cột Phải -->
+        <aside class="sidebar right-sidebar">
+            <h4 class="contact-title">Người liên hệ</h4>
+            <ul class="menu-list">
+                <li>🟢 Nguyễn Văn A</li>
+                <li>🟢 Trần Thị B</li>
+                <li>🟢 Lê Hoàng C</li>
+                <li>🟢 Phạm Văn D</li>
+            </ul>
+        </aside>
+
+    </div>
+
+</body>
+</html>
