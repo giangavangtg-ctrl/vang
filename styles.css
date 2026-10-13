@@ -1,0 +1,164 @@
+/* Đặt lại lề và cách tính kích thước cho toàn trang */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px; /* Tạo khoảng trống xung quanh viền khung */
+}
+
+/* Khung viền tổng bao quanh toàn bộ trang */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #d3d3d3; /* Viền xám nhạt như trong ảnh */
+}
+
+/* ================================
+   1. ĐỊNH DẠNG HEADER
+================================ */
+.header {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between; /* Đẩy menu sang trái và login sang phải */
+    align-items: center;
+}
+
+.header-menu, .header-login {
+    display: flex;
+    align-items: center;
+}
+
+.header a, .logo {
+    color: #cccccc;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 15px;
+}
+
+.logo {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.header a:hover {
+    color: #ffffff;
+}
+
+/* Tab Home có màu nền đen */
+.header .active {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* ================================
+   2. ĐỊNH DẠNG 3 CỘT (FLEXBOX)
+================================ */
+.row {
+    display: flex;
+    background-color: #f1f1f1; /* Nền xám nhạt cho 2 cột sidebar */
+}
+
+.column {
+    padding: 25px;
+}
+
+/* Cột trái */
+.left-sidebar {
+    flex: 15%; /* Chiếm 15% chiều rộng */
+    text-align: center;
+}
+
+.left-sidebar a {
+    display: block;
+    color: #3498db;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+/* Cột giữa */
+.main-content {
+    flex: 65%; /* Chiếm 65% chiều rộng */
+    background-color: #ffffff; /* Nền trắng */
+}
+
+.main-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+.main-content p {
+    line-height: 1.6;
+    color: #333333;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.main-content hr {
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    margin: 30px 0;
+}
+
+/* Cột phải */
+.right-sidebar {
+    flex: 20%; /* Chiếm 20% chiều rộng */
+}
+
+.ad-box {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 40px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 14px;
+}
+
+/* ================================
+   3. ĐỊNH DẠNG FOOTER
+================================ */
+.footer {
+    background-color: #555555; /* Màu xám đậm */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* ================================
+   4. RESPONSIVE (Thích ứng Mobile)
+================================ */
+/* Khi màn hình nhỏ hơn 800px (Điện thoại/Tablet) */
+@media screen and (max-width: 800px) {
+    /* Chuyển 3 cột thành các khối xếp chồng lên nhau (chiều dọc) */
+    .row {
+        flex-direction: column;
+    }
+    
+    /* Các cột chiếm 100% chiều rộng màn hình */
+    .left-sidebar, .main-content, .right-sidebar {
+        flex: 100%;
+        width: 100%;
+    }
+
+    /* Định dạng lại Header để menu không bị tràn vỡ trên điện thoại */
+    .header {
+        flex-direction: column;
+    }
+    .header-menu {
+        flex-wrap: wrap; /* Cho phép các nút rớt dòng nếu thiếu chỗ */
+        justify-content: center;
+    }
+}
