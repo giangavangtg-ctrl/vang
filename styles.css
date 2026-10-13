@@ -1,0 +1,83 @@
+/* Thiết lập chung cho trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Định dạng cho ảnh ở đầu trang */
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Bước 7: Định dạng font chữ, màu sắc và căn giữa cho tiêu đề truyện */
+.story-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: #2c3e50;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* Bước 8: Định dạng khối mục lục */
+.toc-container {
+    border: 2px dashed #3498db;          /* Khung viền */
+    background-color: #ffffff;           /* Màu nền */
+    padding: 20px 40px;                  /* Khoảng đệm */
+    max-width: 600px;
+    margin: 0 auto 40px auto;            /* Căn giữa khối mục lục */
+    border-radius: 8px;
+}
+
+.toc-container h2 {
+    text-align: center;
+    color: #2980b9;
+    margin-top: 0;
+}
+
+/* Hiệu ứng hover cho các liên kết trong mục lục */
+.toc-container a {
+    color: #34495e;
+    text-decoration: none;               /* Bỏ gạch chân mặc định */
+    font-size: 18px;
+}
+
+.toc-container a:hover {
+    color: #e74c3c;                      /* Đổi màu khi đưa chuột vào */
+    text-decoration: underline;          /* Có gạch chân khi hover */
+}
+
+/* Cấu trúc vùng chứa nội dung truyện */
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.story-content h3 {
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* Bước 9: Canh lề và giãn dòng cho các đoạn văn bản thân truyện */
+.story-content p {
+    line-height: 1.8;                    /* Giãn dòng */
+    text-align: justify;                 /* Canh lề đều 2 bên */
+    text-indent: 40px;                   /* Thụt lề dòng đầu tiên */
+    font-size: 17px;
+    margin-bottom: 15px;
+}
