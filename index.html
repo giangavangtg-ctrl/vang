@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Responsive Gallery</title>
+    <!-- Nhúng Bootstrap 5 qua CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Container bọc toàn bộ nội dung, my-5 tạo margin top/bottom -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Responsive Image Gallery</h2>
+        
+        <!-- row khởi tạo lưới, g-4 tạo khoảng cách (gutter) đều giữa các ảnh -->
+        <div class="row g-4">
+            
+            <!-- Khối ảnh 1 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <img src="https://via.placeholder.com/600x400?text=Ảnh+1" class="img-fluid rounded shadow-sm" alt="Gallery image 1">
+            </div>
+            
+            <!-- Khối ảnh 2 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <img src="https://via.placeholder.com/600x400?text=Ảnh+2" class="img-fluid rounded shadow-sm" alt="Gallery image 2">
+            </div>
+            
+            <!-- Khối ảnh 3 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <img src="https://via.placeholder.com/600x400?text=Ảnh+3" class="img-fluid rounded shadow-sm" alt="Gallery image 3">
+            </div>
+            
+            <!-- Khối ảnh 4 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <img src="https://via.placeholder.com/600x400?text=Ảnh+4" class="img-fluid rounded shadow-sm" alt="Gallery image 4">
+            </div>
+
+            <!-- Khối ảnh 5 (Tự động rớt xuống dòng tiếp theo nếu màn hình hiển thị 4 ảnh/dòng) -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <img src="https://via.placeholder.com/600x400?text=Ảnh+5" class="img-fluid rounded shadow-sm" alt="Gallery image 5">
+            </div>
+            
+            <!-- Khối ảnh 6 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <img src="https://via.placeholder.com/600x400?text=Ảnh+6" class="img-fluid rounded shadow-sm" alt="Gallery image 6">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Nhúng Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
