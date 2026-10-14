@@ -1,5 +1,0 @@
-# Báo cáo: Tác hại của Absolute Positioning & Sức mạnh của CSS Grid
-
-Việc lạm dụng `position: absolute` để dàn trang tạo ra những phần tử "bóng ma" – chúng hiển thị trên màn hình nhưng không chiếm không gian vật lý trong luồng tài liệu. Điều này buộc lập trình viên phải ấn định chiều cao tĩnh (fixed height) cho thẻ cha. Trên thiết bị di động (Responsive Design), khi không gian ngang bị thu hẹp, nội dung bắt buộc phải tràn xuống theo chiều dọc. Các "bóng ma" tuyệt đối này không thể giãn nở theo, dẫn đến việc chúng đè bẹp lên nhau và che lấn các đoạn text phía dưới. 
-
-CSS Grid giải quyết triệt để vấn đề này. Là giải pháp dàn trang 2 chiều (trục X và Y) duy nhất của CSS, Grid duy trì không gian vật lý chuẩn xác. Thuộc tính `grid-row: span 2` cho phép tạo bố cục bất đối xứng sắc nét, đồng thời chiều cao của toàn bộ Gallery tự động kéo giãn dựa trên nội dung bên trong. Giao diện trở nên đàn hồi, an toàn và hoàn toàn miễn nhiễm với lỗi đè lấn.
